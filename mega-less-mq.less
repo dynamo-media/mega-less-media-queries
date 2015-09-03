@@ -95,38 +95,50 @@
 
 //APPLE Devices
 // --- iPhone (2, 3G, 3GS) landscape & portrait ---
-@iphone: ~"only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1)";
+@iphone: ~"only screen and (min-device-width: 320px) and (max-device-width: 480px)";
 // --- iPhone (2, 3G, 3GS) only portrait ---
-@iphone-portrait: ~"only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: portrait)";
+@iphone-portrait: ~"only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait)";
 // --- iPhone (2, 3G, 3GS) only landscape ---
-@iphone-landscape: ~"only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape)";
-// --- iPhone (4, 4S) landscape & portrait ---
+@iphone-landscape: ~"only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape)";
 
-@iphone4: ~"only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3)";
-// --- iPhone (4, 4S) only portrait ---
-@iphone4-portrait: ~"only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation: portrait)";
-// --- iPhone (4, 4S) only landscape ---
-@iphone4-landscape: ~"only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation: landscape)";
 // --- iPhone (5) landscape & portrait ---
-
-@iphone5: ~"only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)";
+@iphone5: ~"only screen and (min-device-width: 320px) and (max-device-width: 568px)";
 // --- iPhone (5) only portrait ---
-@iphone5-portrait: ~"only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) and (orientation: portrait)";
+@iphone5-portrait: ~"only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait)";
 // --- iPhone (5) only landscape ---
-@iphone5-landscape: ~"only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) and (orientation: landscape)";
+@iphone5-landscape: ~"only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape)";
+
+@iphone6: ~"only screen and (min-device-width: 375px) and (max-device-width: 667px)";
+// --- iPhone (5) only portrait ---
+@iphone6-portrait: ~"only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait)";
+// --- iPhone (5) only landscape ---
+@iphone6-landscape: ~"only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape)";
+
+@iphone6-plus: ~"only screen and (min-device-width: 414px) and (max-device-width: 736px)";
+// --- iPhone (5) only portrait ---
+@iphone6-plus-portrait: ~"only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait)";
+// --- iPhone (5) only landscape ---
+@iphone6-plus-landscape: ~"only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape)";
 
 // --- iPad + iPad Mini portrait & landscape ---
-@ipad: ~"only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 1)";
+@ipad: ~"only screen and (min-device-width: 768px) and (max-device-width: 1024px)";
 // --- iPad + iPad Mini only portrait ---
-@ipad-portrait: ~"only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: portrait";
+@ipad-portrait: ~"only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait";
 // --- iPad + iPad Mini only landscape ---
-@ipad-landscape: ~"only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape";
+@ipad-landscape: ~"only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape";
 // --- iPad (Retina) portrait & landscape ---
-@ipad-retina: ~"only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 2)";
+@ipad-1-2-mini: ~"only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)";
 // --- iPad (Retina) only portrait ---
-@ipad-retina-portrait: ~"only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait";
+@ipad-1-2-mini-portrait: ~"only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait)";
 // --- iPad (Retina) only landscape ---
-@ipad-retina-landscape: ~"only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape";
+@ipad-1-2-mini-landscape: ~"only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape)";
+
+// --- iPad (Retina) portrait & landscape ---
+@ipad-3-4: ~"only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)";
+// --- iPad (Retina) only portrait ---
+@ipad-3-4-portrait: ~"only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)";
+// --- iPad (Retina) only landscape ---
+@ipad-3-4-landscape: ~"only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)";
 
 //ANDROID DEVIES
 @kindle-fire: ~"only screen and (min-device-width : 526px) and (max-device-width : 950px)";
@@ -137,17 +149,47 @@
 @galaxy-nexus-portrait: ~"only screen and (min-device-width : 360px) and (max-device-width : 519px)";
 @galaxy-nexus-landscape: ~"only screen and (min-device-width : 360px) and (max-device-width : 519px)";
 
- /* Desire + Galaxy S2 (portrait and landscape) ----------- */
-@samsung-galaxy-s2: ~"@media only screen and (min-device-width : 480px) and (max-device-width : 800px)";
-/* Desire + Galaxy S2 (portrait) ----------- */
-@samsung-galaxy-s2-portrait: ~"@media only screen and (min-device-width : 480px) and (max-device-width : 800px) and (orientation : portrait)";
-/* Desire + Galaxy S2 (landscape) ----------- */
-@samsung-galaxy-s2-landscape: ~"@media only screen and (min-device-width : 480px) and (max-device-width : 800px) and (orientation : landscape)";
- 
+@nexus-4: ~"only screen and (min-device-width : 384px) and (max-device-width : 592px) and (-webkit-device-pixel-ratio: 2)";
+@nexus-4-portrait: ~"only screen and (min-device-width : 384px) and (max-device-width : 592px) and (-webkit-device-pixel-ratio: 2) and (orientation : portrait)";
+@nexus-4-landscape: ~"only screen and (min-device-width : 384px) and (max-device-width : 592px) and (-webkit-device-pixel-ratio: 2) and (orientation : landscape)";
 
-@galaxy-nexus-7: ~"only screen and (min-device-width : 601px) and (max-device-width : 880px)";
-@galaxy-nexus-7-portrait: ~"only screen and (min-device-width : 601px) and (max-device-width : 880px)";
-@galaxy-nexus-7-landscape: ~"only screen and (min-device-width : 601px) and (max-device-width : 880px)";
+@nexus-5: ~"only screen and (min-device-width : 360px) and (max-device-width : 592px) and (-webkit-device-pixel-ratio: 3)";
+@nexus-5-portrait: ~"only screen and (min-device-width : 360px) and (max-device-width : 592px) and (-webkit-device-pixel-ratio: 3) and (orientation : portrait)";
+@nexus-5-landscape: ~"only screen and (min-device-width : 360px) and (max-device-width : 592px) and (-webkit-device-pixel-ratio: 3) and (orientation : landscape)";
+
+
+ /* Desire + Galaxy S2 (portrait and landscape) ----------- */
+@samsung-galaxy-s2: ~"@media screen and (min-device-width : 320px) and (max-device-width : 534px) and (-webkit-device-pixel-ratio: 1.5)";
+/* Desire + Galaxy S2 (portrait) ----------- */
+@samsung-galaxy-s2-portrait: ~"@media only screen and (min-device-width : 320px) and (max-device-width : 534px) and (-webkit-device-pixel-ratio: 1.5) and (orientation : portrait)";
+/* Desire + Galaxy S2 (landscape) ----------- */
+@samsung-galaxy-s2-landscape: ~"@media only screen and (min-device-width : 320px) and (max-device-width : 534px) and (-webkit-device-pixel-ratio: 1.5) and (orientation : landscape)";
+
+/* Desire + Galaxy S2 (portrait and landscape) ----------- */
+@samsung-galaxy-s3: ~"@media screen and (min-device-width : 320px) and (max-device-width : 640px) and (-webkit-device-pixel-ratio: 2)";
+/* Desire + Galaxy S2 (portrait) ----------- */
+@samsung-galaxy-s3-portrait: ~"@media screen and (min-device-width : 320px) and (max-device-width : 640px) and (-webkit-device-pixel-ratio: 2) and (orientation : portrait)";
+/* Desire + Galaxy S2 (landscape) ----------- */
+@samsung-galaxy-s3-landscape: ~"@media screen and (min-device-width : 320px) and (max-device-width : 640px) and (-webkit-device-pixel-ratio: 2) and (orientation : landscape)";
+
+/* Desire + Galaxy S2 (portrait and landscape) ----------- */
+@samsung-galaxy-s4: ~"@media screen and (min-device-width : 320px) and (max-device-width : 640px) and (-webkit-device-pixel-ratio: 3)";
+/* Desire + Galaxy S2 (portrait) ----------- */
+@samsung-galaxy-s4-portrait: ~"@media screen and (min-device-width : 320px) and (max-device-width : 640px) and (-webkit-device-pixel-ratio: 3) and (orientation : portrait)";
+/* Desire + Galaxy S2 (landscape) ----------- */
+@samsung-galaxy-s4-landscape: ~"@media screen and (min-device-width : 320px) and (max-device-width : 640px) and (-webkit-device-pixel-ratio: 3) and (orientation : landscape)";
+
+/* Desire + Galaxy S2 (portrait and landscape) ----------- */
+@samsung-galaxy-s5: ~"@media screen and (min-device-width : 360px) and (max-device-width : 640px) and (-webkit-device-pixel-ratio: 3)";
+/* Desire + Galaxy S2 (portrait) ----------- */
+@samsung-galaxy-s5-portrait: ~"@media screen and (min-device-width : 360px) and (max-device-width : 640px) and (-webkit-device-pixel-ratio: 3) and (orientation : portrait)";
+/* Desire + Galaxy S2 (landscape) ----------- */
+@samsung-galaxy-s5-landscape: ~"@media screen and (min-device-width : 360px) and (max-device-width : 640px) and (-webkit-device-pixel-ratio: 3) and (orientation : landscape)";
+
+
+@galaxy-nexus-7: ~"only screen and (min-device-width : 601px) and (max-device-width : 906px)  and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332)";
+@galaxy-nexus-7-portrait: ~"only screen and (min-device-width : 601px) and (max-device-width : 906px)  and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (orientation: portrait) ";
+@galaxy-nexus-7-landscape: ~"only screen and (min-device-width : 601px) and (max-device-width : 906px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (orientation: landscape) ";
 
 @galaxy-note-2: ~"only screen and (min-device-width : 720px) and (max-device-width : 1280px)";
 @galaxy-note-2-portrait: ~"only screen and (min-device-width : 720px) and (max-device-width : 1280px)";
